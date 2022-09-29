@@ -8,3 +8,47 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
 }
+
+.btn-break {
+    background-color: gray;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.btn-break button {
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    margin-left: 5px;
+}
+
+.exercise-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.break-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn-activity {
+    margin-top: 50px;
+    background-color: lightskyblue;
+    padding: 20px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+}

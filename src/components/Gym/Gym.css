@@ -1,4 +1,5 @@
 .gym-cart {
+    background-color: aquamarine;
     margin-top: 20px;
     width: 300px;
     height: 400px;
@@ -9,11 +10,13 @@
 
 .gym-cart img {
     width: 280px;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 .btn-cart {
     width: 100%;
-    background: lightskyblue;
+    background: orange;
     border: 0;
     border-radius: 0px 0px 5px 5px;
     position: absolute;
