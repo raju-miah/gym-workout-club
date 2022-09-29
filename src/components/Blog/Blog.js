@@ -10,12 +10,12 @@ const Blog = () => {
             <div>
                 <h1>What are the differences between props and state?</h1>
                 <p><strong>Answer: </strong><br />
-                    <p><strong>props</strong></p>
+                    <strong>props</strong> <br />
                     1. The Data is passed from one component to another. <br />
                     2. It is Immutable (cannot be modified). <br />
                     3. Props can be used with state and functional components. <br />
-                    4. Props are read-only.
-                    <p><strong>state</strong></p>
+                    4. Props are read-only. <br />
+                    <strong>state</strong> <br />
                     1. The Data is passed within the component only. <br />
                     2. It is Mutable ( can be modified). <br />
                     3. State can be used only with the state components/class component (Before 16.0). <br />
@@ -24,8 +24,8 @@ const Blog = () => {
             </div>
             <div>
                 <h1>useEffect What else can we use other than loading data with api?</h1>
-                <p><strong>Answer: </strong></p>
-                <p><strong> Mostly useEffect use cases</strong>
+                <strong>Answer: </strong> <br />
+                <p><strong> Mostly useEffect use cases</strong> <br />
                     1. Running once on mount: fetch API data <br />
                     2. Running on state change: validating input field <br />
                     3. Running on state change: live filtering <br />

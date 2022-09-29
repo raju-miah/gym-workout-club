@@ -21,6 +21,11 @@
     border-radius: 50%;
     padding: 15px;
     margin-left: 5px;
+    cursor: pointer;
+}
+
+.btn-break button:hover {
+    background-color: orange;
 }
 
 .exercise-time {
@@ -51,4 +56,5 @@
     width: 250px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
