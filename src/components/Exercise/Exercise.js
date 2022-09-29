@@ -1,6 +1,13 @@
 import React from 'react';
 
-const Exercise = ({ time }) => {
+const Exercise = (props) => {
+    const { time } = props;
+    // console.log(time)
+
+    let totalTime = 0;
+    for (const times of time) {
+        totalTime = totalTime + times.time;
+    }
     return (
         <div>
             <h1>Alex John here</h1>
@@ -18,7 +25,7 @@ const Exercise = ({ time }) => {
             <h2>Exercise Details</h2>
             <div className='exercise-time'>
                 <p><strong>Exercise time</strong></p>
-                <p>{time.length} seconds</p>
+                <p>{totalTime} seconds</p>
             </div>
             <div className='break-time'>
                 <p><strong>Break time</strong></p>

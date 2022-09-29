@@ -15,7 +15,7 @@ const Workout = () => {
     }, [])
 
     const handelAddTime = (workout) => {
-        console.log(workout)
+        // console.log(workout)
         const newTime = [...time, workout];
         setTime(newTime);
     }
@@ -33,7 +33,9 @@ const Workout = () => {
             </div>
             <div className="workout-info">
                 {/* info in Exercise */}
-                <Exercise time={time}></Exercise>
+                <Exercise
+                    time={time}
+                ></Exercise>
             </div>
         </div>
     );

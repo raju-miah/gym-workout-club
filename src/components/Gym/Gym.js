@@ -5,13 +5,14 @@ const Gym = (props) => {
     const { workout, handelAddTime } = props;
     const { name, time, img, text } = workout;
     // console.log(props)
+
     return (
         <div className='gym-cart'>
             <div>
                 <img src={img} alt="" />
                 <p>{name}</p>
                 <p><small>{text}</small></p>
-                <p>Time required: {time}</p>
+                <p>Time required: {time} seconds</p>
             </div>
             <button onClick={() => handelAddTime(workout)} className='btn-cart'>
                 <p>Add to list</p>
