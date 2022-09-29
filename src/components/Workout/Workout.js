@@ -5,11 +5,19 @@ const Workout = () => {
 
     const [workouts, setWorkouts] = useState([]);
 
+    const [time, setTime] = useState([]);
+
     useEffect(() => {
         fetch('workout.json')
             .then(res => res.json())
             .then(data => setWorkouts(data))
     }, [])
+
+    const handelAddTime = (workout) => {
+        console.log(workout)
+        const newTime = [...time, workout];
+        setTime(newTime);
+    }
 
     return (
         <div className='workout-container'>
@@ -18,6 +26,7 @@ const Workout = () => {
                     workouts.map(workout => <Gym
                         key={workout.id}
                         workout={workout}
+                        handelAddTime={handelAddTime}
                     ></Gym>)
                 }
             </div>
@@ -37,7 +46,7 @@ const Workout = () => {
                 <h2>Exercise Details</h2>
                 <div className='exercise-time'>
                     <p><strong>Exercise time</strong></p>
-                    <p>200 seconds</p>
+                    <p>{time.length} seconds</p>
                 </div>
                 <div className='break-time'>
                     <p><strong>Break time</strong></p>
