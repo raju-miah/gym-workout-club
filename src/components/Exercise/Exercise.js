@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Exercise = (props) => {
     const { time } = props;
@@ -8,6 +8,13 @@ const Exercise = (props) => {
     for (const times of time) {
         totalTime = totalTime + times.time;
     }
+
+    const [breakTime, setBreakTime] = useState([]);
+
+    const handleBreakTime = (event) => {
+        const breakTime = event.target.innerText;
+        setBreakTime(breakTime);
+    }
     return (
         <div>
             <h1>Alex John here</h1>
@@ -16,11 +23,11 @@ const Exercise = (props) => {
                 <h1>Add a Break</h1>
             </div>
             <div className='btn-break'>
-                <button>10</button>
-                <button>20</button>
-                <button>30</button>
-                <button>40</button>
-                <button>50</button>
+                <button onClick={(event) => handleBreakTime(event)}>10</button>
+                <button onClick={(event) => handleBreakTime(event)}>20</button>
+                <button onClick={(event) => handleBreakTime(event)}>30</button>
+                <button onClick={(event) => handleBreakTime(event)}>40</button>
+                <button onClick={(event) => handleBreakTime(event)}>50</button>
             </div>
             <h2>Exercise Details</h2>
             <div className='exercise-time'>
@@ -29,7 +36,7 @@ const Exercise = (props) => {
             </div>
             <div className='break-time'>
                 <p><strong>Break time</strong></p>
-                <p>15 seconds</p>
+                <p>{breakTime} seconds</p>
             </div>
             <button className='btn-activity'>Activity Completed</button>
         </div>
