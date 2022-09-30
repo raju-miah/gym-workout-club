@@ -21,10 +21,14 @@ const Exercise = (props) => {
     const notify = () => toast.success("Workout Completed", { position: "top-center" });
     return (
         <div>
-            <h1>Alex John here</h1>
-            <p>Sydney, Australia</p>
+            <div className='person'>
+
+                <img src="https://ik.imagekit.io/po8th4g4eqj/prod/tr:w-1168/putin-speech-1168x440px.jpg" alt="putin" />
+                <h1>Vladimir Putin</h1>
+            </div>
+            <p>Moscow, Russia</p>
             <div>
-                <h1>Add a Break</h1>
+                <h2>Add a Break</h2>
             </div>
             <div className='btn-break'>
                 <button onClick={(event) => handleBreakTime(event)}>10</button>

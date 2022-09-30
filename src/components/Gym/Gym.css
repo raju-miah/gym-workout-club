@@ -1,25 +1,61 @@
 .gym-cart {
     background-color: aquamarine;
     margin-top: 20px;
-    width: 300px;
-    height: 400px;
-    border: 2px solid gray;
     border-radius: 5px;
     position: relative;
+    flex-basis: 30%;
+    box-shadow: 0px 0px 15px -5px #000;
+    padding: 10px;
 }
 
 .gym-cart img {
-    width: 280px;
-    margin: 10px;
+    max-width: 100%;
     border-radius: 5px;
 }
 
 .btn-cart {
     width: 100%;
     background: orange;
-    border: 0;
-    border-radius: 0px 0px 5px 5px;
-    position: absolute;
-    bottom: 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .gym-cart {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gym-cart {
+        flex-basis: 100%;
+        padding: 0 20px;
+    }
+
+    .gym-cart h3 {
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+    .gym-cart p {
+        font-size: 22px;
+        line-height: 1.1;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+    }
+
+    .btn-cart {
+        width: 100%;
+        display: block;
+        background: orange;
+        border: 0;
+        border-radius: 5px;
+        bottom: 0;
+        cursor: pointer;
+    }
 }

@@ -1,13 +1,16 @@
 import React from 'react';
+import './Blog.css'
 
 const Blog = () => {
     return (
         <div>
-            <div>
+
+            <div className='blogHeader'><h1>Blog</h1></div>
+            <div className='blog'>
                 <h1>How does React works?</h1>
                 <p><strong>Answer: </strong>ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components as necessary without cluttering your code.</p>
             </div>
-            <div>
+            <div className='blog'>
                 <h1>What are the differences between props and state?</h1>
                 <p><strong>Answer: </strong><br />
                     <strong>props</strong> <br />
@@ -22,7 +25,7 @@ const Blog = () => {
                     4. State is both read and write.
                 </p>
             </div>
-            <div>
+            <div className='blog'>
                 <h1>useEffect What else can we use other than loading data with api?</h1>
                 <strong>Answer: </strong> <br />
                 <p><strong> Mostly useEffect use cases</strong> <br />

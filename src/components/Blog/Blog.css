@@ -1,0 +1,33 @@
+.blog {
+    margin: 20px 0;
+    background: #e7e7e7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blog h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.blog p {
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+}
+
+.blogHeader {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* background: aquamarine; */
+    padding: 10px 0;
+    color: #444;
+    font-size: 25px;
+}
+
+.blogHeader h1 {
+    background: aquamarine;
+    padding: 10px 200px;
+    border-radius: 15px;
+}

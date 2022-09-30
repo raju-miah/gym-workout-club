@@ -10,7 +10,7 @@ const Gym = (props) => {
         <div className='gym-cart'>
             <div>
                 <img src={img} alt="" />
-                <p>{name}</p>
+                <h3>{name}</h3>
                 <p><small>{text}</small></p>
                 <p>Time required: {time} seconds</p>
             </div>
